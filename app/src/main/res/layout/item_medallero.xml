@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView4"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        app:shapeAppearanceOverlay="@style/bordeado_redondeado" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:text="Argentina"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_puesto"
+                    android:layout_width="28dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/puesto"
+                    android:gravity="center"
+                    android:text="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordes"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/oro" />
+
+                    <TextView
+                        android:id="@+id/tv_oro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="30"
+                        android:textAlignment="center"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/plata" />
+
+                    <TextView
+                        android:id="@+id/tv_plata"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="45"
+                        android:textAlignment="center"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/bronce" />
+
+                    <TextView
+                        android:id="@+id/tv_bronce"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="55"
+                        android:textAlignment="center"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_bandera"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/paris_fondo_verde"
+                app:shapeAppearanceOverlay="@style/bordeado_redondeado"></com.google.android.material.imageview.ShapeableImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

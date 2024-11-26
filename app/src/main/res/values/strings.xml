@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Paris2024</string>
+    <string name="paris">Juegos Olimpicos Paris 2024</string>
+    <string name="iniciar">Iniciar Sesion</string>
+    <string name="ingresar_usario">Ingresar Usuario:</string>
+    <string name="ingresar_contra">Ingresar Contraseña:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="medallero">Medallero</string>
+    <string name="usuario">Usuario</string>
+    <string name="ticket">Ticket</string>
+
+
+    <string name="ticket1">Ticket Pro</string>
+    <string name="comision1">(Comision del 2%)</string>
+
+    <string name="ticket2">Ticket Ultra</string>
+    <string name="comision2">(Si la compra se realiza entre las 20:00 hs y las 23:59 hs aplica una comisión del 1%, sino aplica una comisión del 3%)</string>
+
+    <string name="ticket3">Ticket Ultimate</string>
+    <string name="comision3">(Si la compra se realiza un sábado o domingo se aplica una comisión del 3%, sino aplica una comisión del 0.75%)</string>
+
+</resources>

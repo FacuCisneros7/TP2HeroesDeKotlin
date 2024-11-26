@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="230dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:padding="5dp">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2979FF"
+        android:src="@color/white_clean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/bordeado_redondeado"></com.google.android.material.imageview.ShapeableImageView>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/siv_h_evento"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_tenis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/bordeado_redondeado"></com.google.android.material.imageview.ShapeableImageView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="-20dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siv_h_evento">
+
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                app:srcCompat="@drawable/ic_place" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                app:srcCompat="@drawable/ic_time" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                app:srcCompat="@drawable/ic_day" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                app:srcCompat="@drawable/ic_asiento" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_h_lugar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                android:ellipsize="end"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="PSG Stadium"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_h_hora"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                android:ellipsize="end"
+                android:lines="1"
+                android:singleLine="true"
+
+                android:text="10:30"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_h_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                android:ellipsize="end"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="2024/07/02"
+
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_h_asiento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                android:ellipsize="end"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="20"
+
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_codigo_barra"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="-5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:srcCompat="@drawable/barra" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

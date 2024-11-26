@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_evento"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:padding="5dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/white_clean"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/bordeado_redondeado"></com.google.android.material.imageview.ShapeableImageView>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/siv_evento"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/bordeado_redondeado"></com.google.android.material.imageview.ShapeableImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/bordes"
+                app:srcCompat="@drawable/ic_place" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/bordes"
+                app:srcCompat="@drawable/ic_time" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/bordes"
+                app:srcCompat="@drawable/ic_day" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/bordes"
+                app:srcCompat="@drawable/ic_money" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_lugar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordes"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="PSG Stadium"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_hora"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordes"
+                android:gravity="center"
+                android:text="10:30"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordes"
+                android:gravity="center"
+                android:text="2024/07/02"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_costo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordes"
+                android:gravity="center"
+                android:text="150000.00"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

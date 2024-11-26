@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/director_navigation"
+    app:startDestination="@id/userFragment">
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.thiagoyairlezcano.paris2024.userFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <argument
+            android:name="idUser"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
+    <fragment
+        android:id="@+id/medalleroFragment"
+        android:name="com.thiagoyairlezcano.paris2024.MedalleroFragment"
+        android:label="fragment_medallero"
+        tools:layout="@layout/fragment_medallero" />
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.thiagoyairlezcano.paris2024.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" >
+        <action
+            android:id="@+id/action_ticketFragment_to_eventosFragment"
+            app:destination="@id/eventosFragment" />
+        <argument
+            android:name="id_usuario"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventosFragment"
+        android:name="com.thiagoyairlezcano.paris2024.EventosFragment"
+        android:label="fragment_eventos"
+        tools:layout="@layout/fragment_eventos" >
+        <argument
+            android:name="id_usuario"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <argument
+            android:name="ticket"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_eventosFragment_to_asientoFragment"
+            app:destination="@id/asientoFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.thiagoyairlezcano.paris2024.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/compraFragment"
+        android:name="com.thiagoyairlezcano.paris2024.CompraFragment"
+        android:label="fragment_compra"
+        tools:layout="@layout/fragment_compra" >
+        <argument
+            android:name="idUsuario"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <argument
+            android:name="idEvento"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <argument
+            android:name="ticket"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="asiento"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="ver"
+            app:argType="boolean"
+            android:defaultValue="true" />
+        <action
+            android:id="@+id/action_compraFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/asientoFragment"
+        android:name="com.thiagoyairlezcano.paris2024.AsientoFragment"
+        android:label="fragment_asiento"
+        tools:layout="@layout/fragment_asiento" >
+        <argument
+            android:name="idUsuario"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <argument
+            android:name="idEvento"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <argument
+            android:name="ticket"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_asientoFragment_to_compraFragment"
+            app:destination="@id/compraFragment" />
+    </fragment>
+
+
+</navigation>

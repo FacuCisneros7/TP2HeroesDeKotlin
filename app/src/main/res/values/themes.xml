@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Paris2024" parent="Theme.Design.Light.NoActionBar">
+        <!-- Configura el color de la barra de estado -->
+        <item name="android:statusBarColor">@color/gray</item>
+
+    </style>
+
+    <!-- Tema principal que hereda del tema base -->
+    <style name="Theme.Paris2024" parent="Base.Theme.Paris2024" />
+
+    <!-- Estilo para bordes redondeados -->
+    <style name="bordeado_redondeado" parent="">
+        <item name="android:background">@color/white</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <!-- Estilo para bordes más redondeados -->
+    <style name="redondo" parent="">
+        <item name="android:background">@color/white</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50dp</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="color">@color/white</item>
+    </style>
+</resources>
